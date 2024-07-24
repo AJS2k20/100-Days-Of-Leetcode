@@ -13,4 +13,11 @@ _______________________________________________________
 The SQL query retrieves the names, populations, and areas of countries from the World table where the area is at least 3,000,000 square kilometers or the population is at least 25,000,000.
 _______________________________________________________
 
+### Day 3 
+#### 1683. Invalid Tweets
+SELECT tweet_id: This selects the tweet_id column from the table.
+FROM Tweets: This specifies the Tweets table as the source of the data.
+WHERE LENGTH(content) > 15: This condition filters the rows to include only those tweets where the length of the content exceeds 15 characters.
+_______________________________________________________
+
 
