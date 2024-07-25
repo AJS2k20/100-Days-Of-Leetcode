@@ -20,4 +20,9 @@ FROM Tweets: This specifies the Tweets table as the source of the data.
 WHERE LENGTH(content) > 15: This condition filters the rows to include only those tweets where the length of the content exceeds 15 characters.
 _______________________________________________________
 
+### Day 4 
+#### 1757. Recyclable and Low Fat Products
+The query selects product_id from the Products table where both low_fats and recyclable are 'Y'. The result can be returned in any order.
+_______________________________________________________
+
 
