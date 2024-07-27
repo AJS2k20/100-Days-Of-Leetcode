@@ -25,4 +25,18 @@ _______________________________________________________
 The query selects product_id from the Products table where both low_fats and recyclable are 'Y'. The result can be returned in any order.
 _______________________________________________________
 
+### Day 5 
+#### 1378. Replace Employee ID With The Unique Identifier
+1. FROM Employees e:
+★ The primary table Employees is aliased as e.
+
+3. LEFT JOIN EmployeeUNI en on e.id = en.id:
+★ A LEFT JOIN combines Employees (e) with EmployeeUNI (en) based on matching id values.
+★ Ensures all employees from Employees are included, with null for unique_id if no match is found in EmployeeUNI.
+
+4. SELECT en.unique_id as unique_id, e.name as name:
+★ Selects unique_id from EmployeeUNI and name from Employees.
+★ Displays null for unique_id if the employee doesn't have one in EmployeeUNI.
+_______________________________________________________
+
 
