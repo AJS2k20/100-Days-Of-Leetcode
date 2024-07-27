@@ -43,8 +43,10 @@ _______________________________________________________
 #### 1068. Product Sales Analysis I
 SELECT Product.product_name, Sales.year, Sales.price: <br />
   ★ Specifies the columns to be retrieved.<br />
+  
 FROM Sales: <br />
   ★ The main table from which data is being selected. <br />
+
 INNER JOIN Product ON Sales.product_id = Product.product_id: <br />
   ★ Combines rows from Sales and Product where the product_id matches in both tables. <br />
 _______________________________________________________
