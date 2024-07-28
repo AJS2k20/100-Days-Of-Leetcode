@@ -51,4 +51,11 @@ INNER JOIN Product ON Sales.product_id = Product.product_id: <br />
   ★ Combines rows from Sales and Product where the product_id matches in both tables. <br />
 _______________________________________________________
 
-
+### Day 7 
+#### 197. Rising Temperature
+★ The Weather table is aliased as w1 for the main query and as w2 for the subquery. <br />
+★ The main query selects id from w1 where the temperature on that date is greater than the temperature on the previous day. This <br /> comparison is made using a subquery. <br />
+★ The subquery retrieves the temperature from w2 where w2.recordDate is one day before w1.recordDate. <br />
+This is done using the DATE_SUB function which subtracts one day from w1.recordDate. <br />
+★ The main query filters the dates where the temperature is higher than the previous day and returns the corresponding id values.
+_______________________________________________________
