@@ -59,3 +59,18 @@ _______________________________________________________
 This is done using the DATE_SUB function which subtracts one day from w1.recordDate. <br />
 ★ The main query filters the dates where the temperature is higher than the previous day and returns the corresponding id values.
 _______________________________________________________
+
+### Day 8 
+#### 2356. Number of Unique Subjects Taught by Each Teacher
+
+SELECT teacher_id, COUNT(DISTINCT subject_id) AS cnt:
+teacher_id: This column is selected to identify each teacher.
+
+COUNT(DISTINCT subject_id) AS cnt: This part of the query counts the distinct subject_id values for each teacher_id. The DISTINCT keyword ensures that each subject is counted only once, even if the teacher teaches the same subject in multiple departments.
+
+FROM teacher:
+This specifies the table from which to retrieve the data, which is the teacher table.
+
+GROUP BY teacher_id:
+This clause groups the results by teacher_id, so the count of unique subjects is calculated separately for each teacher.
+_______________________________________________________
