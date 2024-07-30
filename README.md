@@ -74,3 +74,19 @@ This specifies the table from which to retrieve the data, which is the teacher t
 GROUP BY teacher_id:
 This clause groups the results by teacher_id, so the count of unique subjects is calculated separately for each teacher.
 _______________________________________________________
+
+### Day 9 
+#### 217. Contains Duplicate
+
+Initialization: A set named hashset is created. Sets are used because they allow for fast lookup operations.
+
+Iterate through the array: The code loops through each element n in the array nums.
+
+Check for duplicates: Inside the loop, the code checks if n is already in hashset.
+If n is found in hashset, it means n is a duplicate, so the function returns True immediately.
+
+If n is not found, it is added to hashset.
+
+Return result: If the loop completes without finding any duplicates, the function returns False, indicating all elements in the array are distinct.
+_______________________________________________________
+
